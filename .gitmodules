@@ -1,0 +1,21 @@
+[submodule "vim/bundle/pathogen"]
+	path = vim/bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "vim/bundle/js-syntax"]
+	path = vim/bundle/js-syntax
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "vim/bundle/sensible"]
+	path = vim/bundle/sensible
+	url = https://github.com/tpope/vim-sensible.git
+[submodule "vim/bundle/less-syntax"]
+	path = vim/bundle/less-syntax
+	url = https://github.com/groenewege/vim-less.git
+[submodule "vim/bundle/nerdtree"]
+	path = vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "vim/colors/ir_black"]
+	path = vim/colors/ir_black
+	url = https://github.com/twerth/ir_black.git
