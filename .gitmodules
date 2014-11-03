@@ -19,3 +19,9 @@
 [submodule "vim/colors/ir_black"]
 	path = vim/colors/ir_black
 	url = https://github.com/twerth/ir_black.git
+[submodule "vim/bundle/bufferline"]
+	path = vim/bundle/bufferline
+	url = https://github.com/bling/vim-bufferline.git
+[submodule "vim/bundle/syntastic"]
+	path = vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git

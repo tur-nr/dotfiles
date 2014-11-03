@@ -42,7 +42,7 @@ nnoremap <C-J> :m +1<CR>
 nnoremap <C-K> :m -2<CR>
 
 " List buffers
-nnoremap <C-L> :ls<CR>
+nnoremap <S-L> :ls<CR>
 
 " CrtlP buffers
 nnoremap <C-B> :CtrlPBuffer<CR>
