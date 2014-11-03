@@ -5,7 +5,7 @@ execute pathogen#infect()
 " Line nums, colors and colorscheme
 set number
 set t_Co=256
-colorscheme monokai
+colorscheme Tomorrow-Night-Eighties
 
 " Set indentation (2 spaces)
 setlocal tabstop=2
@@ -42,7 +42,7 @@ nnoremap <C-J> :m +1<CR>
 nnoremap <C-K> :m -2<CR>
 
 " List buffers
-nnoremap <S-L> :ls<CR>
+nnoremap <C-L> :ls<CR>
 
 " CrtlP buffers
 nnoremap <C-B> :CtrlPBuffer<CR>
