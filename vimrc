@@ -2,6 +2,9 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" json format
+autocmd BufNewFile,BufRead *.json set ft=javascript
+
 " Line nums, colors and colorscheme
 set number
 set t_Co=256
@@ -15,7 +18,7 @@ setlocal autoindent
 setlocal smartindent
 
 " Swap files
-set dir=~/.vim/.swap//
+set dir=~/.vim/.swap/
 
 " Backup files
 set backup
@@ -26,7 +29,7 @@ set undofile
 set undodir=~/.vim/.undo/
 
 " Ignore paths
-set wildignore+=*/node_modules/*,*/build/*
+set wildignore+=*/node_modules/*,*/build/*,*/processed/*
 
 " Highlight current line
 augroup CursorLine
@@ -48,5 +51,4 @@ nnoremap <S-L> :ls<CR>
 nnoremap <C-B> :CtrlPBuffer<CR>
 
 " NERDTree toggle 
-noremap <C-N> :NERDTreeToggle<CR>
-
+nnoremap <C-N> :NERDTreeToggle<CR>
