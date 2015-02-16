@@ -29,7 +29,7 @@ set undofile
 set undodir=~/.vim/.undo/
 
 " Ignore paths
-set wildignore+=*/node_modules/*,*/build/*,*/processed/*
+set wildignore+=*/node_modules/*
 
 " Highlight current line
 augroup CursorLine
