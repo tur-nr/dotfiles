@@ -5,6 +5,10 @@ execute pathogen#infect()
 " json format
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
+" emmet for html/css only
+let g:user_emmet_install_global = 0
+autocmd FileType html,css EmmetInstall
+
 " Line nums, colors and colorscheme
 set number
 set t_Co=256
