@@ -2,12 +2,18 @@
 runtime bundle/pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 
+" airline, powerline fonts
+let g:airline_powerline_fonts = 1
+
 " json format
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
 " emmet for html/css only
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,handlebars.html EmmetInstall
+
+" coffeescript indents 
+autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=4 expandtab
 
 " Line nums, colors and colorscheme
 set number
@@ -20,6 +26,12 @@ setlocal shiftwidth=2
 setlocal expandtab
 setlocal autoindent
 setlocal smartindent
+
+" indentation guides 
+let g:indent_guides_auto_colors = 0
+let g:indent_guides_guide_size = 1 
+autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
+autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 
 " Swap files
 set dir=~/.vim/.swap/
@@ -49,7 +61,7 @@ nnoremap <C-J> :m +1<CR>
 nnoremap <C-K> :m -2<CR>
 
 " List buffers
-nnoremap <S-L> :ls<CR>
+nnoremap <C-L> :ls<CR>
 
 " CrtlP buffers
 nnoremap <C-B> :CtrlPBuffer<CR>
