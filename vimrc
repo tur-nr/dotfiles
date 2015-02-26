@@ -19,6 +19,7 @@ autocmd FileType coffee setl shiftwidth=4 expandtab
 " Line nums, colors and colorscheme
 set number
 set t_Co=256
+set background=dark
 colorscheme Tomorrow-Night-Eighties
 
 " Set indentation (2 spaces)
