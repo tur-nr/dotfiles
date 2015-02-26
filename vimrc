@@ -12,8 +12,9 @@ autocmd BufNewFile,BufRead *.json set ft=javascript
 let g:user_emmet_install_global = 0
 autocmd FileType html,css,handlebars.html EmmetInstall
 
-" coffeescript indents 
+" coffeescript indents
 autocmd BufNewFile,BufReadPost *.coffee setl shiftwidth=4 expandtab
+autocmd FileType coffee setl shiftwidth=4 expandtab
 
 " Line nums, colors and colorscheme
 set number
@@ -27,9 +28,9 @@ setlocal expandtab
 setlocal autoindent
 setlocal smartindent
 
-" indentation guides 
+" indentation guides
 let g:indent_guides_auto_colors = 0
-let g:indent_guides_guide_size = 1 
+let g:indent_guides_guide_size = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=237
 
@@ -66,5 +67,5 @@ nnoremap <C-L> :ls<CR>
 " CrtlP buffers
 nnoremap <C-B> :CtrlPBuffer<CR>
 
-" NERDTree toggle 
+" NERDTree toggle
 nnoremap <C-N> :NERDTreeToggle<CR>
