@@ -1,0 +1,4 @@
+# `mkdir` and `cd` into the new directory
+function md {
+  mkdir $@ && cd $_
+}

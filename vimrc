@@ -5,6 +5,9 @@ execute pathogen#infect()
 " airline, powerline fonts
 let g:airline_powerline_fonts = 1
 
+" line mover
+let g:move_key_modifier = 'C'
+
 " json format
 autocmd BufNewFile,BufRead *.json set ft=javascript
 
@@ -48,6 +51,10 @@ set undodir=~/.vim/.undo/
 
 " Ignore paths
 set wildignore+=*/node_modules/*
+set wildignore+=*/build/*
+set wildignore+=*/compiled/*
+set wildignore+=*/bower_components/*
+set wildignore+=*/coverage/*
 
 " Highlight current line
 augroup CursorLine
@@ -56,17 +63,9 @@ augroup CursorLine
   au WinLeave * setlocal nocursorline
 augroup END
 
-" Move current line up
-nnoremap <C-J> :m +1<CR>
-
-" Move current line down
-nnoremap <C-K> :m -2<CR>
 
 " List buffers
 nnoremap <C-L> :ls<CR>
-
-" CrtlP buffers
-nnoremap <C-B> :CtrlPBuffer<CR>
 
 " NERDTree toggle
 nnoremap <C-N> :NERDTreeToggle<CR>

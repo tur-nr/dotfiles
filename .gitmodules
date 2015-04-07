@@ -52,3 +52,9 @@
 [submodule "vim/bundle/nerdcommenter"]
 	path = vim/bundle/nerdcommenter
 	url = git@github.com:scrooloose/nerdcommenter.git
+[submodule "vim/bundle/jade-syntax"]
+	path = vim/bundle/jade-syntax
+	url = https://github.com/digitaltoad/vim-jade
+[submodule "vim/bundle/move"]
+	path = vim/bundle/move
+	url = https://github.com/matze/vim-move
