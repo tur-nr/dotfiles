@@ -55,3 +55,6 @@
 [submodule "vim/bundle/move"]
 	path = vim/bundle/move
 	url = https://github.com/matze/vim-move
+[submodule "vim/bundle/js-syntax"]
+	path = vim/bundle/js-syntax
+	url = git@github.com:othree/yajs.vim.git
