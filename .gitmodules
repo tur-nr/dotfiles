@@ -4,9 +4,6 @@
 [submodule "vim/bundle/ctrlp"]
 	path = vim/bundle/ctrlp
 	url = https://github.com/kien/ctrlp.vim.git
-[submodule "vim/bundle/js-syntax"]
-	path = vim/bundle/js-syntax
-	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule "vim/bundle/sensible"]
 	path = vim/bundle/sensible
 	url = https://github.com/tpope/vim-sensible.git
