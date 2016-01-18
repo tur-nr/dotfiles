@@ -69,3 +69,11 @@ nnoremap <C-L> :ls<CR>
 
 " NERDTree toggle
 nnoremap <C-N> :NERDTreeToggle<CR>
+
+" GUI
+if has("gui_running")
+  set guifont=Liberation\ Mono\ for\ Powerline\ 11
+  set guioptions-=r
+  set guioptions-=L
+  set lines=999 columns=999
+endif

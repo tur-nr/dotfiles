@@ -58,3 +58,6 @@
 [submodule "vim/bundle/js-syntax"]
 	path = vim/bundle/js-syntax
 	url = git@github.com:othree/yajs.vim.git
+[submodule "vim/bundle/dockerfile-syntax"]
+	path = vim/bundle/dockerfile-syntax
+	url = git@github.com:ekalinin/Dockerfile.vim.git
